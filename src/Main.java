@@ -1,27 +1,27 @@
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-        public class PalindromeCheckerApp {
+import java.util.*;
+public class PalindromeCheckerApp {
     /*
     Application entry Point
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
     This is the first method executed by the JVM
     when the program starts
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input text : ");
+        String input = sc.nextLine();
+        int i = 0 ;
+        boolean status = true;
+        int j = input.length() -1;
+        for(int k = 0 ; k < input.length()/2 ; k++){
+            if(input.charAt(i)!= input.charAt(j)){
+                status = false;
+            }
+        }
 
     @author Developer
     @version 1.0
      */
+        System.out.println("Is palindrome ? " + status);
 
-            public static  void main(String []args){
-                System.out.println("Welcome to the Palindrom Checker");
-                System.out.println("Version 1.0");
-                System.out.println("System initialised succesfully");
-            }
-        }
+    public static  void main(String []args){
+        System.out.println("Welcome to the Palindrom Checker");
